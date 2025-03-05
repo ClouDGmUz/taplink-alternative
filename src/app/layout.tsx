@@ -12,6 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   title: "DEW - Premium Motor Oil",
   description: "DEW motor oil — avtomobillar uchun sifatli moylar ishlab chiqarish va sotishga ixtisoslashgan kompaniya",
@@ -21,8 +26,6 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   manifest: "/manifest.json",
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#ffffff",
   openGraph: {
     title: "DEW - Premium Motor Oil",
     description: "DEW motor oil — avtomobillar uchun sifatli moylar ishlab chiqarish va sotishga ixtisoslashgan kompaniya",
