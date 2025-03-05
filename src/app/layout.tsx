@@ -13,12 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const viewport = {
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#ffffff",
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#ffffff'
 };
 
 export const metadata: Metadata = {
-  title: "DEW - Premium Motor Oil",
+  title: 'DEW - Premium Motor Oil',
+  themeColor: '#ffffff',
   description: "DEW motor oil — avtomobillar uchun sifatli moylar ishlab chiqarish va sotishga ixtisoslashgan kompaniya",
   icons: {
     icon: "/favicon.ico",
