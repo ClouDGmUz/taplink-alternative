@@ -1,11 +1,14 @@
 'use client';
-import React, { useState } from "react";
+
 import Image from "next/image";
 import { CameraIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import ImageSlider from '@/components/ImageSlider';
+import VideoPlayer from '@/components/VideoPlayer';
+import { useState } from 'react';
 
 export default function Home() {
   const [isImageSliderOpen, setIsImageSliderOpen] = useState(false);
+  const [isVideoPlayerOpen, setIsVideoPlayerOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12 px-4">
@@ -22,7 +25,7 @@ export default function Home() {
           </div>
 
           {/* Profile Info */}
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">DEW</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Condor</h1>
           <p className="text-gray-600 dark:text-gray-300 text-center mb-8">DEW motor oil — avtomobillar uchun sifatli moylar ishlab chiqarish va sotishga ixtisoslashgan kompaniya. Mutaxassislarimiz avtomobilingiz dvigatelining ishonchli himoyasini taʼminlash uchun har bir detalga alohida eʼtibor qaratmoqda.</p>
 
           {/* Social Links */}
@@ -55,6 +58,10 @@ export default function Home() {
 
             <a
               href="#videos"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsVideoPlayerOpen(true);
+              }}
               className="flex items-center justify-between w-full p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
             >
               <span className="flex items-center">
@@ -106,6 +113,9 @@ export default function Home() {
 
       {/* Image Slider */}
       <ImageSlider isOpen={isImageSliderOpen} onClose={() => setIsImageSliderOpen(false)} />
+      
+      {/* Video Player */}
+      <VideoPlayer isOpen={isVideoPlayerOpen} onClose={() => setIsVideoPlayerOpen(false)} />
     </div>
   );
 }

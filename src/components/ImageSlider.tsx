@@ -10,29 +10,13 @@ interface ImageSliderProps {
 }
 
 const images = [
-  '/images/DEW copy.jpg',
-  '/images/FIGHTER 0W20 SP-001 copy.jpg',
-  '/images/FIGHTER 0W20 SP-002 copy.jpg',
-  '/images/FIGHTER 10W60-001 copy.jpg',
-  '/images/FIGHTER 10W60-002 copy.jpg',
-  '/images/FIGHTER 5W30 SL_CF.jpg',
-  '/images/FIGHTER 5W30 SN-001 copy.jpg',
-  '/images/FLAG DEW copy.jpg',
-  '/images/FLAG WISDOM copy.jpg',
-  '/images/GOLD 55 INSERT ARKAYÜZ.jpg',
-  '/images/GOLD 55 INSERT ÖNYÜZ.jpg',
-  '/images/GOS EP 80W90 copy.jpg',
-  '/images/Hydro Roller 68 copy.jpg',
-  '/images/PSF345 copy.jpg',
-  '/images/WISDOM 0W20 copy.jpg',
-  '/images/WISDOM ECO copy.jpg',
-  '/images/WISDOM LS SERIES copy.jpg',
-  '/images/WISDOM PC-001 copy.jpg',
-  '/images/WISDOM PC-002 copy.jpg',
-  '/images/WISDOM RENO-001 copy.jpg',
-  '/images/WISDOM RENO-002 copy.jpg',
-  '/images/WISDOM RENO-003 copy.jpg',
-  '/images/WISDOM VW copy.jpg'
+  '/images/image1.jpg',
+  '/images/image2.jpg',
+  '/images/image3.jpg',
+  '/images/image4.jpg',
+  '/images/image5.jpg',
+  '/images/image6.jpg',
+  '/images/image7.jpg'
 ];
 
 export default function ImageSlider({ isOpen, onClose }: ImageSliderProps) {
