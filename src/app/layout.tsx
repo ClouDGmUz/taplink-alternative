@@ -19,7 +19,7 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: 'DEW - Premium Motor Oil',
-  themeColor: '#ffffff',
+
   description: "DEW motor oil — avtomobillar uchun sifatli moylar ishlab chiqarish va sotishga ixtisoslashgan kompaniya",
   icons: {
     icon: "/favicon.ico",
