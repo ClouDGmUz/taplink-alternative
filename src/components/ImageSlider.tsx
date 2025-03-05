@@ -10,18 +10,33 @@ interface ImageSliderProps {
 }
 
 const images = [
-  '/images/image1.jpg',
-  '/images/image2.jpg',
-  '/images/image3.jpg',
-  '/images/image4.jpg',
-  '/images/image5.jpg',
-  '/images/image6.jpg',
-  '/images/image7.jpg',
+  '/images/DEW copy.jpg',
+  '/images/FIGHTER 0W20 SP-001 copy.jpg',
+  '/images/FIGHTER 0W20 SP-002 copy.jpg',
+  '/images/FIGHTER 10W60-001 copy.jpg',
+  '/images/FIGHTER 10W60-002 copy.jpg',
+  '/images/FIGHTER 5W30 SL_CF.jpg',
+  '/images/FIGHTER 5W30 SN-001 copy.jpg',
+  '/images/FLAG DEW copy.jpg',
+  '/images/FLAG WISDOM copy.jpg',
+  '/images/GOLD 55 INSERT ARKAYÜZ.jpg',
+  '/images/GOLD 55 INSERT ÖNYÜZ.jpg',
+  '/images/GOS EP 80W90 copy.jpg',
+  '/images/Hydro Roller 68 copy.jpg',
+  '/images/PSF345 copy.jpg',
+  '/images/WISDOM 0W20 copy.jpg',
+  '/images/WISDOM ECO copy.jpg',
+  '/images/WISDOM LS SERIES copy.jpg',
+  '/images/WISDOM PC-001 copy.jpg',
+  '/images/WISDOM PC-002 copy.jpg',
+  '/images/WISDOM RENO-001 copy.jpg',
+  '/images/WISDOM RENO-002 copy.jpg',
+  '/images/WISDOM RENO-003 copy.jpg',
+  '/images/WISDOM VW copy.jpg'
 ];
 
 export default function ImageSlider({ isOpen, onClose }: ImageSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isImageLoading, setIsImageLoading] = useState(true);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -73,18 +88,11 @@ export default function ImageSlider({ isOpen, onClose }: ImageSliderProps) {
         {/* Image */}
         <div className="relative w-full h-full flex items-center justify-center">
           <Image
-            key={currentImageIndex}
             src={images[currentImageIndex]}
             alt={`Slide ${currentImageIndex + 1}`}
             fill
-            style={{
-              objectFit: 'contain',
-              opacity: isImageLoading ? 0 : 1,
-              transition: 'opacity 0.3s ease-in-out'
-            }}
+            style={{ objectFit: 'contain' }}
             priority
-            onLoadingComplete={() => setIsImageLoading(false)}
-            onLoad={() => setIsImageLoading(false)}
           />
         </div>
 
